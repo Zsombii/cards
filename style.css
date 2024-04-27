@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+* {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#elso {
+    border: 1px solid yellow;
+    padding: 2px;
+    font-size: 15px;
+    background-color: yellow;
+    color: black;
+    width: 50px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+#masodik {
+    border: 1px solid yellow;
+    padding: 2px;
+    font-size: 15px;
+    background-color: yellow;
+    color: black;
+    width: 110px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+#harmadik {
+    border: 1px solid yellow;
+    padding: 2px;
+    font-size: 15px;
+    background-color: yellow;
+    color: black;
+    width: 90px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.gomb1 {
+    color: black;
+    border: 1px solid black;
+    width: 50px;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 10px;
+}
+
+.gomb1:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.gomb2 {
+    color: black;
+    border: 1px solid black;
+    width: 50px;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 10px;
+}
+
+.gomb2:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.gomb3 {
+    color: black;
+    border: 1px solid black;
+    width: 50px;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 10px;
+}
+
+.gomb3:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.card {
+    flex-basis: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fontos {
+    font-weight: 700;
+    font-family: 'Oswald';
+}
+
+.sima {
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
