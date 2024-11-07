@@ -26,9 +26,12 @@
 
 </head>
 <body>
+  <div id="toast">
+   <p>Köszöntelek az oldalon</p>
+   <a href="https://sites.google.com/view/ita-vzs-10b/pojekt?authuser=1">Munkáim</a>
+  </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
     <button class="sotetmod" onclick="darkmode()">Sötét mód</button>
-    <button class="sotetmod" onclick="toast()">Toast üzenet</button>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -99,27 +102,6 @@
 
   <div class="parallax"></div>
 
-  <button class="chatbot-toggler">
-    <span class="material-symbols-rounded">mode_comment</span>
-    <span class="material-symbols-outlined">close</span>
-  </button>
-  <div class="chatbot">
-    <header>
-      <h2>Chatbot</h2>
-      <span class="close-btn material-symbols-outlined">close</span>
-    </header>
-    <ul class="chatbox">
-      <li class="chat incoming">
-        <span class="material-symbols-outlined">smart_toy</span>
-        <p>Szia, segíthetek?</p>
-      </li>
-    </ul>
-    <div class="chat-input">
-      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-      <span id="send-btn" class="material-symbols-rounded">send</span>
-    </div>
-  </div>
-
   <div id="todo-container">
     <div id="header">
       <h1>To Do Lista</h1>
@@ -145,8 +127,26 @@
     </div>
   </div>
 
-  <div id="snackbar">Toast üzenet...</div>
+  <script type="text/javascript">
+    if (!Array.isArray(window.qbOptions)) {
+      window.qbOptions = []
+    }
+    window.qbOptions.push({"baseUrl":"https://botsrv2.com","use":"KlXDVbBPDjrYdgQL/OKyGVEXQQob7dMWX"});
+  </script>
 
+<script>
+  function showToast() {
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3000);
+  }
+
+  window.onload = showToast;
+</script>
+
+  <script type="text/javascript" src="https://static.botsrv2.com/website/js/widget2.js" crossorigin="anonymous" defer data-no-minify="1" data-cfasync="false"></script>
   <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
